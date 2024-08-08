@@ -127,7 +127,7 @@ email should ask the recipient to login with their existing credentials to regis
 [Code](https://github.com/AhmedSalem2/ML-Leaks) for the paper "ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models"
 
 ## 扩展阅读二：关于模型萃取里的零阶优化
-(ZOOpt)https://github.com/polixir/ZOOpt is a python package for Zeroth-Order Optimization.
-([ICLR'24] DeepZero: Scaling up Zeroth-Order Optimization for Deep Model Training)[https://github.com/OPTML-Group/DeepZero]
+[ZOOpt](https://github.com/polixir/ZOOpt) is a python package for Zeroth-Order Optimization.
+[[ICLR'24] DeepZero: Scaling up Zeroth-Order Optimization for Deep Model Training](https://github.com/OPTML-Group/DeepZero)
 
 
