@@ -1,0 +1,9 @@
+[submodule "submodules/backdoor_attack"]
+	path = submodules/backdoor_attack
+	url = https://github.com/kylecui/backdoor_attack_llm.git
+[submodule "submodule/DAN"]
+	path = submodule/DAN
+	url = https://github.com/0xk1h0/ChatGPT_DAN
+[submodule "submodule/hackingBuddyGPT"]
+	path = submodule/hackingBuddyGPT
+	url = https://github.com/ipa-lab/hackingBuddyGPT.git
