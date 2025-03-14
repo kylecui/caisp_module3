@@ -1,3 +1,6 @@
 src/module2/data/cifar-10-python.tar.gz
 src/module2/data/*
 !src/module2/data/.gitkeep
+discussions_on_basis/data/*
+discussions_on_basis/ppo_cartpole.zip
+!discussions_on_basis/data/.gitkeep
