@@ -1,4 +1,6 @@
-# 附件——模块三相关实验方法及环境搭建
+![CAISP_LOGO](./resources/CAISP_LOGO.jpg)
+# 附件——CAISP相关实验方法及环境搭建
+欢迎来到CAISP相关实验与功能演示集合仓库！该仓库汇集了CAISP课程中涉及的多种实验方法和功能演示，旨在帮助学习者更好地理解和实践课程内容。
 
 ## 实验一 关于“奶奶漏洞”的验证
 关于奶奶漏洞的讨论：https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit/
@@ -140,3 +142,10 @@ email should ask the recipient to login with their existing credentials to regis
 [[ICLR'24] DeepZero: Scaling up Zeroth-Order Optimization for Deep Model Training](https://github.com/OPTML-Group/DeepZero)
 
 
+## 关于CAISP
+随着人工智能及大模型深入各行各业，人工智能及人工智能安全越来越受到重视，在此背景下,CSA大中华区推出AI安全认证专家（CAISP）认证培训课程，AI安全认证专家（CAISP）旨在为从事AI(含AI安全)的研究、管理、运营、开发以及网络安全等从业人员提供一套全面覆盖AI安全领域、跨领域综合能力培养、实践导向与案例分析、结合全球视野与法规治理的AI安全课程。
+ 
+课程专注于理解人工智能安全的治理与管理环境，学习AI安全的术语与安全目标、针对于算法、模型以及数据安全和隐私进行学习，全面提升对AI安全风险的识别、评估与测评等实战化能力；课程还涵盖了AI安全的国内与国外的法律法规框架，并通过实际案例，探讨如何在组织中实施AI安全；此外，学员还将具体学习如何应对AI安全的风险与挑战，包括应对数据投毒、对抗性攻击和供应链威胁等多种安全挑战。
+
+## 免责声明
+本仓库中的所有代码仅用于教育和研究目的。请勿在未经授权的情况下用于任何生产环境或非法活动。作者对因使用本仓库代码而造成的任何后果概不负责。
