@@ -133,6 +133,88 @@ already registered the whole team to attend, but they need to confirm their atte
 email should ask the recipient to login with their existing credentials to register for the event. the register link should be https://i.hackyou.com/register
 ```
 
+## 模块二：技术基础篇实验
+
+模块二包含 29 个实验文件，按教材章节顺序编号，统一存放在 `src/module2/` 目录下。完整教学顺序见 [`CURRICULUM.md`](./CURRICULUM.md)。
+
+### 环境配置
+
+```bash
+conda create -n py_gpu_new python=3.10
+conda activate py_gpu_new
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install matplotlib scikit-learn pandas bayesian-optimization phe stable-baselines3 gymnasium
+```
+
+CIFAR-10 数据集会自动下载到 `src/module2/data/`。
+
+### 第一章–第二章：AI 基础与常见算法
+
+| 文件 | 主题 |
+|------|------|
+| `01_basics_attention.ipynb` | 词向量与注意力入门 |
+| `02_logistic_softmax_nn.ipynb` | 逻辑回归 / Softmax / 神经网络 |
+| `03_nn_to_sin.ipynb` | 神经网络拟合非线性 |
+| `04_naive_bayes_spam.ipynb` | 朴素贝叶斯分类器 |
+| `05_transformers.ipynb` | Transformer 自注意力 |
+| `06_moe.ipynb` | 混合专家模型 (MoE) |
+| `07_rl_cartpole.ipynb` | 强化学习基础 (PPO) |
+
+### 第三章：AI 安全概述（桥接实验）
+
+| 文件 | 主题 |
+|------|------|
+| `08_bridge_adversarial_classifier.ipynb` | 对抗样本初探（2D 决策边界 + FGSM） |
+| `09_bridge_prompt_injection.ipynb` | 提示注入（注意力劫持） |
+| `10_bridge_reward_hacking.ipynb` | 奖励黑客（RL 规格漏洞） |
+
+### 第四章：AI 数据隐私与保护
+
+| 文件 | 主题 |
+|------|------|
+| `11_privacy_k_anonymity.ipynb` | K-Anonymity / L-Diversity / T-Closeness |
+| `12_federated_learning.ipynb` | 联邦学习 (FedAvg) |
+| `13_mpc_voting.py` | 安全多方计算投票（Flask Web） |
+| `14_mpc_he_dp.py` | 同态加密 / DP / MPC 对比（Flask Web） |
+| `15_privacy_differential_privacy.ipynb` | 差分隐私训练 (DP-SGD) |
+| `16_privacy_membership_inference.ipynb` | 成员推理攻击 |
+| `17_privacy_model_extraction.ipynb` | 模型窃取攻击 |
+| `18_privacy_model_inversion.ipynb` | 模型反演攻击 |
+
+### 第五章：AI 对抗攻击
+
+| 文件 | 主题 |
+|------|------|
+| `19_attack_lbfgs.ipynb` | L-BFGS 白盒攻击 |
+| `20_attack_fgsm_pgd.ipynb` | FGSM 与 PGD 白盒攻击 |
+| `21_attack_deepfool.ipynb` | DeepFool 白盒攻击 |
+| `22_attack_cw.ipynb` | Carlini-Wagner L2 白盒攻击 |
+| `23_attack_uap.ipynb` | 通用对抗扰动 (UAP) |
+| `24_attack_bayesian.ipynb` | 贝叶斯优化黑盒攻击 |
+| `25_attack_zoo.ipynb` | ZOO 零阶优化黑盒攻击 |
+| `26_attack_simba.ipynb` | SimBA 简单黑盒攻击 |
+
+### 第六章：AI 安全防御机制
+
+| 文件 | 主题 |
+|------|------|
+| `27_defense_adversarial_training.ipynb` | 对抗训练 |
+| `28_defense_detection.ipynb` | 对抗样本检测 |
+| `29_defense_randomized_smoothing.ipynb` | 随机平滑认证防御 |
+
+### 验证脚本
+
+```bash
+# 全部 notebook 语法检查
+conda run -n py_gpu_new python tests/syntax_check.py
+
+# 执行单个 notebook
+conda run -n py_gpu_new python tests/run_notebook.py "[('src/module2/20_attack_fgsm_pgd.ipynb','src/module2')]"
+
+# 慢速 notebook 减配冒烟测试（ZOO / DP-SGD / Bayesian / RL）
+conda run -n py_gpu_new python tests/smoke_tests.py
+```
+
 ## 扩展阅读一：成员推理攻击代码
 [Code](https://github.com/AhmedSalem2/ML-Leaks) for the paper "ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models"
 
@@ -141,6 +223,11 @@ email should ask the recipient to login with their existing credentials to regis
 
 [[ICLR'24] DeepZero: Scaling up Zeroth-Order Optimization for Deep Model Training](https://github.com/OPTML-Group/DeepZero)
 
+## 扩展阅读三：CSA发布 | AISMM人工智能安全成熟度模型深度解读：从“看见风险”到“持续治理”
+[CSA发布 | AISMM人工智能安全成熟度模型深度解读：从“看见风险”到“持续治理”](https://mp.weixin.qq.com/s/b5_aerpYsuii4Sv2DnJpPg?scene=1)
+
+## 扩展阅读四：Agentic AI Threat Modeling Framework: MAESTRO
+[Agentic AI Threat Modeling Framework: MAESTRO](https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro)
 
 ## 关于CAISP
 随着人工智能及大模型深入各行各业，人工智能及人工智能安全越来越受到重视，在此背景下,CSA大中华区推出AI安全认证专家（CAISP）认证培训课程，AI安全认证专家（CAISP）旨在为从事AI(含AI安全)的研究、管理、运营、开发以及网络安全等从业人员提供一套全面覆盖AI安全领域、跨领域综合能力培养、实践导向与案例分析、结合全球视野与法规治理的AI安全课程。
